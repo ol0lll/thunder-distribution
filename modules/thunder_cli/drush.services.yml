@@ -1,0 +1,6 @@
+services:
+  thunder_cli.commands:
+    class: \Drupal\sampler\Commands\ThunderMigrationCommands
+    arguments: ['@thunder_cli.migration']
+    tags:
+      - { name: drush.command }

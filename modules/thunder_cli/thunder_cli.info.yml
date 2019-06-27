@@ -1,0 +1,6 @@
+name: 'Thunder Command Line Tools'
+type: module
+description: 'Provide Drush 8, 9 and Drupal console commands for thunder tasks.'
+package: Thunder
+core: '8.x'
+php: '7.0'
