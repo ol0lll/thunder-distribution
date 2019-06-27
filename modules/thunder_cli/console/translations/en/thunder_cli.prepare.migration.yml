@@ -1,0 +1,4 @@
+description: 'Prepare migration Thunder 2 to Thunder 3.'
+arguments: {}
+messages:
+    success: 'Migration prepared.'

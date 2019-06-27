@@ -1,6 +1,11 @@
 services:
-  thunder_cli.thunder_migration:
-    class: Drupal\thunder_cli\Command\MigrationCommand
+  thunder_cli.thunder_migrate:
+    class: Drupal\thunder_cli\Command\MigrateCommand
+    arguments: ['@thunder_cli.migration']
+    tags:
+      - { name: drupal.command }
+  thunder_cli.thunder_prepare_migration:
+    class: Drupal\thunder_cli\Command\PrepareMigrationCommand
     arguments: ['@thunder_cli.migration']
     tags:
       - { name: drupal.command }

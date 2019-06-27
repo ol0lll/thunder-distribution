@@ -1,3 +1,4 @@
 services:
   thunder_cli.migration:
     class: Drupal\thunder_cli\Migration
+    arguments: []

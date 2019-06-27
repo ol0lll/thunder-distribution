@@ -12,14 +12,14 @@ use Drupal\Console\Annotations\DrupalCommand;
 // phpcs:enable
 
 /**
- * Class ReportCommand.
+ * Class PrepareMigrationCommand.
  *
  * @DrupalCommand (
  *     extension="thunder_cli",
  *     extensionType="module"
  * )
  */
-class MigrationCommand extends ContainerAwareCommand {
+class PrepareMigrationCommand extends ContainerAwareCommand {
 
   /**
    * The migration instance.
@@ -44,15 +44,15 @@ class MigrationCommand extends ContainerAwareCommand {
    */
   protected function configure() {
     $this
-      ->setName('thunder:migration')
-      ->setDescription($this->trans('commands.thunder_cli.migration.description'));
+      ->setName('thunder:prepare:migration')
+      ->setDescription($this->trans('commands.thunder_cli.prepare.migration.description'));
   }
 
   /**
    * {@inheritdoc}
    */
   protected function execute(InputInterface $input, OutputInterface $output) {
-    $this->migration->migrate();
+    $this->migration->prepare();
   }
 
 }
