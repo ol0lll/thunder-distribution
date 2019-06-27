@@ -8,7 +8,7 @@ use Drush\Commands\DrushCommands;
 /**
  * A Drush command file.
  */
-class MigrationCommands extends DrushCommands {
+class MigrationCommand extends DrushCommands {
 
   /**
    * The reporter instance.

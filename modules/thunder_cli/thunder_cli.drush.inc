@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Drush commands for sampler module.
+ * Drush commands for Thunder.
  */
 
 /**
@@ -20,7 +20,7 @@ function thunder_cli_drush_command() {
 /**
  * Run the thunder migration.
  */
-function drush_thunder_migration() {
+function drush_thunder_cli_thunder_migration() {
   $migration = \Drupal::getContainer()
     ->get('thunder_cli.migration');
 

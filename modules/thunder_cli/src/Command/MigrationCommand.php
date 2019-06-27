@@ -15,7 +15,7 @@ use Drupal\Console\Annotations\DrupalCommand;
  * Class ReportCommand.
  *
  * @DrupalCommand (
- *     extension="sampler",
+ *     extension="thunder_cli",
  *     extensionType="module"
  * )
  */
